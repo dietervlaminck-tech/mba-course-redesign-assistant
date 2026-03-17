@@ -4,15 +4,17 @@ import { courses } from "@/data/courses";
 const programLabel = {
   BIT: "MBA Business & IT",
   PP: "MBA Public & Private",
+  BST: "MBA Business & Sustainable Transitions",
 };
 
 const programColor = {
   BIT: "bg-blue-100 text-blue-800",
   PP: "bg-emerald-100 text-emerald-800",
+  BST: "bg-amber-100 text-amber-800",
 };
 
 export default function HomePage() {
-  const programs = ["BIT", "PP"] as const;
+  const programs = ["BIT", "PP", "BST"] as const;
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -25,11 +27,12 @@ export default function HomePage() {
             Nyenrode MBA — Curriculumherziening Learning Outcomes
           </p>
           <p className="mt-1 text-sm text-gray-500">
-            Kies je module om te starten met het herontwerpgesprek. De
-            AI-assistent begeleidt je stap voor stap door het proces: leerdoelen
-            herzien en afstemmen op de nieuwe MBA Program Learning Outcomes,
-            toetsing afstemmen, en leeractiviteiten ontwerpen met blended
-            learning.
+            Het MMBA-curriculum wijzigt van 77 naar 68 ECTS — elke module gaat
+            van 7,5 naar 6 ECTS. Kies je module om te starten met het
+            herontwerpgesprek. De AI-assistent begeleidt je stap voor stap:
+            leerdoelen herzien en afstemmen op de nieuwe MBA Program Learning
+            Outcomes, toetsing afstemmen, leeractiviteiten ontwerpen met blended
+            learning, en het nieuwe blokschema invullen.
           </p>
         </div>
       </header>
@@ -65,7 +68,8 @@ export default function HomePage() {
                     <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
                       <span className="flex items-center gap-1">
                         <span className="font-medium text-gray-700">ECTS:</span>
-                        <span>{course.ects}</span>
+                        <span className="line-through text-gray-400">{course.ects}</span>
+                        <span>→ {course.newEcts}</span>
                       </span>
                       <span className="flex items-center gap-1">
                         <span className="font-medium text-gray-700">

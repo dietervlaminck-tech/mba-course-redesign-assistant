@@ -9,6 +9,7 @@ import type { Course } from "@/data/courses";
 const programLabel = {
   BIT: "MBA Business & IT",
   PP: "MBA Public & Private",
+  BST: "MBA Business & Sustainable Transitions",
 };
 
 export default function ChatInterface({ course }: { course: Course }) {
@@ -103,7 +104,10 @@ export default function ChatInterface({ course }: { course: Course }) {
             </div>
             <div className="flex justify-between">
               <span className="text-gray-500">ECTS</span>
-              <span className="font-medium">{course.ects}</span>
+              <span className="font-medium">
+                <span className="line-through text-gray-400">{course.ects}</span>{" "}
+                → {course.newEcts}
+              </span>
             </div>
             <div className="flex justify-between">
               <span className="text-gray-500">
