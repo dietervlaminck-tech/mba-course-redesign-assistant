@@ -1,7 +1,7 @@
 "use client";
 
 import { useChat } from "@ai-sdk/react";
-import { TextStreamChatTransport } from "ai";
+import { DefaultChatTransport } from "ai";
 import { useRef, useEffect, useState, useMemo } from "react";
 import ReactMarkdown from "react-markdown";
 import type { Course } from "@/data/courses";
@@ -10,12 +10,13 @@ const programLabel = {
   BIT: "MBA Business & IT",
   PP: "MBA Public & Private",
   BST: "MBA Business & Sustainable Transitions",
+  Elective: "Keuzemodule / Elective",
 };
 
 export default function ChatInterface({ course }: { course: Course }) {
   const transport = useMemo(
     () =>
-      new TextStreamChatTransport({
+      new DefaultChatTransport({
         api: "/api/chat",
         body: { courseSlug: course.slug },
       }),
@@ -305,9 +306,10 @@ export default function ChatInterface({ course }: { course: Course }) {
 
             {error && (
               <div className="bg-red-50 border border-red-200 rounded-lg p-3 text-sm text-red-700">
-                {isEN
-                  ? "An error occurred. Check that the ANTHROPIC_API_KEY is set and try again."
-                  : "Er is een fout opgetreden. Controleer of de ANTHROPIC_API_KEY is ingesteld en probeer het opnieuw."}
+                {error.message ||
+                  (isEN
+                    ? "An error occurred. Check that the ANTHROPIC_API_KEY is set and try again."
+                    : "Er is een fout opgetreden. Controleer of de ANTHROPIC_API_KEY is ingesteld en probeer het opnieuw.")}
               </div>
             )}
           </div>

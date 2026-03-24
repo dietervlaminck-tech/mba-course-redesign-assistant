@@ -21,6 +21,8 @@ function buildEnglishPrompt(course: Course): string {
     ? "Modular Executive MBA in Business & IT"
     : course.program === "BST"
     ? "Modular Executive MBA in Business & Sustainable Transitions"
+    : course.program === "Elective"
+    ? "Elective module (cross-program)"
     : "Modular Executive MBA in Public & Private";
 
   const learningGoals = formatLearningGoals(course.currentLearningGoals);
@@ -208,6 +210,8 @@ function buildDutchPrompt(course: Course): string {
     ? "Modulaire Executive MBA in Public & Private"
     : course.program === "BST"
     ? "Modulaire Executive MBA in Business & Sustainable Transitions"
+    : course.program === "Elective"
+    ? "Keuzemodule (programma-overstijgend)"
     : "Modulaire Executive MBA in Business & IT";
 
   const learningGoals = formatLearningGoals(course.currentLearningGoals);

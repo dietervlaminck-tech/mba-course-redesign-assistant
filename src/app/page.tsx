@@ -5,16 +5,18 @@ const programLabel = {
   BIT: "MBA Business & IT",
   PP: "MBA Public & Private",
   BST: "MBA Business & Sustainable Transitions",
+  Elective: "Keuzemodules / Electives",
 };
 
 const programColor = {
   BIT: "bg-blue-100 text-blue-800",
   PP: "bg-emerald-100 text-emerald-800",
   BST: "bg-amber-100 text-amber-800",
+  Elective: "bg-purple-100 text-purple-800",
 };
 
 export default function HomePage() {
-  const programs = ["BIT", "PP", "BST"] as const;
+  const programs = ["BIT", "PP", "BST", "Elective"] as const;
 
   return (
     <div className="min-h-screen bg-gray-50">
