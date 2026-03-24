@@ -69,6 +69,18 @@ export default function ChatInterface({ course }: { course: Course }) {
         "Help me met de constructive alignment van deze module.",
       ];
 
+  const quickPrompts = isEN
+    ? [
+        "How do I save time with oral exams?",
+        "Do I comply with the assessment policy?",
+        "Create a draft course outline",
+      ]
+    : [
+        "Hoe bespaar ik tijd bij mondelinge tentamens?",
+        "Voldoe ik aan het toetsbeleid?",
+        "Maak een concept module-outline",
+      ];
+
   return (
     <div className="flex h-screen bg-gray-50">
       {/* Sidebar - Course Info */}
@@ -317,6 +329,20 @@ export default function ChatInterface({ course }: { course: Course }) {
 
         {/* Input area */}
         <div className="border-t border-gray-200 bg-white p-4">
+          {messages.length > 0 && (
+            <div className="max-w-3xl mx-auto mb-2 flex flex-wrap gap-1.5">
+              {quickPrompts.map((prompt) => (
+                <button
+                  key={prompt}
+                  onClick={() => handleSuggestion(prompt)}
+                  disabled={isLoading}
+                  className="text-xs bg-gray-50 border border-gray-200 rounded-full px-3 py-1 text-gray-600 hover:border-blue-400 hover:text-blue-600 hover:bg-blue-50 transition-colors disabled:opacity-50"
+                >
+                  {prompt}
+                </button>
+              ))}
+            </div>
+          )}
           <form
             onSubmit={handleSubmit}
             className="max-w-3xl mx-auto flex gap-3"
