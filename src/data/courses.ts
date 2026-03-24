@@ -157,7 +157,7 @@ export const courses: Course[] = [
     slug: "business-process-management",
     name: "Business Process Management",
     nameShort: "BPM",
-    program: "BIT",
+    program: "BST",
     ects: 7.5,
     newEcts: 6,
     contactHours: 50,
