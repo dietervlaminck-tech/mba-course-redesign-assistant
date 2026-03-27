@@ -227,7 +227,7 @@ export default function ChatInterface({ course }: { course: Course }) {
             {course.name}
           </h1>
           <span className="shrink-0 text-xs bg-amber-100 text-amber-800 px-2 py-0.5 rounded font-medium">
-            {course.ects} ECTS
+            {course.newEcts} ECTS
           </span>
         </header>
 

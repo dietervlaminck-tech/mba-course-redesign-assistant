@@ -113,6 +113,32 @@ The module should also connect to the Nyenrode AoL framework:
 When redesigning, consider how learning goals address:
 - Foundational Knowledge, Application, Integration, Human Dimension, Caring, Learning How to Learn
 
+## MMBA Assessment Program Requirements (mandatory compliance)
+When redesigning assessments, the new design MUST comply with the MMBA Assessment Program:
+
+**Core assessment principles:**
+- At least 50% of the total grade must be based on **individual work**
+- An **oral component is mandatory** in every module
+- A **group assignment is mandatory** in every module
+- Assessments must follow Bloom's taxonomy levels and include rubrics with clear performance criteria
+- The 4-eyes principle applies: each assessment is reviewed by another examiner
+
+**Take-Home Written Assignments (THWA) rules:**
+- A THWA may carry a maximum of **50% of the module grade**
+- Every THWA must use either Scenario 1 (with complementary oral/presentation component — recommended) or Scenario 2 (with logbook + random Q&A verification)
+- THWAs must emphasize higher-order cognitive skills (Bloom levels 5-6: Evaluate/Create)
+
+**AI usage rules (Traffic Light Model):**
+- Every module must specify allowed AI usage levels: Green (supportive), Amber (conditional with AI logbook), Red (not allowed)
+- All written assignments require an **AI usage disclosure** and a signed **AI pledge**
+- Missing disclosure or pledge = automatic fail (knockout criterion)
+- An **AI logbook** is mandatory for all written assignments
+
+**Head-Heart-Hands alignment:**
+- Head (academic/analytical): assessed through individual papers, case analyses, research
+- Heart (personal/interpersonal): assessed through reflections, oral exams, team collaboration
+- Hands (practical application): assessed through applied assignments, presentations, action research
+
 ## Details of this specific module
 - **Module name**: ${course.name}
 - **Program**: ${programLabel}
@@ -312,6 +338,32 @@ De module dient ook aan te sluiten bij het Nyenrode AoL-framework:
 ## Fink's Six Dimensions of Significant Learning
 Overweeg bij het herontwerp hoe leerdoelen de volgende dimensies adresseren:
 - Foundational Knowledge, Application, Integration, Human Dimension, Caring, Learning How to Learn
+
+## MMBA Toetsprogramma Vereisten (verplichte naleving)
+Bij het herontwerpen van toetsing MOET het nieuwe ontwerp voldoen aan het MMBA Assessment Program:
+
+**Kernprincipes toetsing:**
+- Minimaal 50% van het eindcijfer moet gebaseerd zijn op **individueel werk**
+- Een **mondelinge component is verplicht** in elke module
+- Een **groepsopdracht is verplicht** in elke module
+- Toetsing moet Bloom's taxonomieniveaus volgen en rubrics bevatten met duidelijke beoordelingscriteria
+- Het 4-ogenprincipe geldt: elke toets wordt beoordeeld door een tweede examinator
+
+**Regels voor schriftelijke thuisopdrachten (Take-Home Written Assignments / THWA):**
+- Een THWA mag maximaal **50% van het modulecijfer** wegen
+- Elke THWA moet Scenario 1 (met aanvullende mondelinge/presentatiecomponent — aanbevolen) of Scenario 2 (met logboek + steekproefsgewijze Q&A verificatie) toepassen
+- THWA's moeten hogere-orde cognitieve vaardigheden benadrukken (Bloom niveaus 5-6: Evalueren/Creëren)
+
+**AI-gebruiksregels (Stoplichtmodel):**
+- Elke module moet het toegestane AI-gebruik specificeren: Groen (ondersteunend), Oranje (voorwaardelijk met AI-logboek), Rood (niet toegestaan)
+- Alle schriftelijke opdrachten vereisen een **AI-gebruiksverklaring** en een ondertekende **AI-pledge**
+- Ontbrekende verklaring of pledge = automatisch onvoldoende (knockout criterium)
+- Een **AI-logboek** is verplicht voor alle schriftelijke opdrachten
+
+**Head-Heart-Hands afstemming:**
+- Head (academisch/analytisch): getoetst via individuele papers, casusanalyses, onderzoek
+- Heart (persoonlijk/interpersoonlijk): getoetst via reflecties, mondelinge tentamens, teamsamenwerking
+- Hands (praktische toepassing): getoetst via toegepaste opdrachten, presentaties, actieonderzoek
 
 ## Gegevens van deze specifieke module
 - **Modulenaam**: ${course.name}
